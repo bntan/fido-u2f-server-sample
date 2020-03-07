@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    script(src='/scripts/u2f-sign.js', type='text/javascript')
+    div(class="center")
+        img(src="/logo/logo.png")
+        br
+        br 
+        p.
+            You are going to use your FIDO key to authenticate
+        p.
+            Get ready and click on validate to procceed
+        br    
+        - var button_class=['btn', 'btn-lg', 'btn-primary', 'btn-block'];
+        button(class=button_class, onclick='sign("' + keyHandle + '", "' + publicKey + '", "' + challenge + '")') Validate

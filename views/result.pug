@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    div(class="message")
+        - if (type === 'register'){
+            p.
+                <strong>Registration status is #{status}</strong> 
+        - } else if (type === 'sign'){
+            p.
+                <strong>Authentication status is #{status}</strong>
+        - }
+
+        - if (typeof(error_code) !== 'undefined'){
+            p.
+                <strong>Error code:</strong> #{error_code}
+        - }
+        
+        - if (typeof(error_message) !== 'undefined'){
+            p.
+                <strong>Error message:</strong> #{error_message}
+        - }
+        
+        - if (typeof(keyHandle) !== 'undefined'){
+            p.
+                <strong>Key handle:</strong> #{keyHandle}
+        - }
+        
+        - if (typeof(publicKey) !== 'undefined'){
+            p.
+                <strong>Public Key:</strong> #{publicKey}
+        - }
+        
+        - if (typeof(userPresent) !== 'undefined'){
+            p.
+                <strong>User present:</strong> #{userPresent}
+        - }
+        
+        - if (typeof(counter) !== 'undefined'){
+            p.
+                <strong>Counter:</strong> #{counter}
+        - }

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div(class="message")
+        p.
+            <strong>Error:</strong> #{message}
+        - if (typeof(error.status) !== 'undefined'){
+            p.
+                <strong>Error status:</strong> #{error.status}
+        -}
+        pre #{error.stack}
