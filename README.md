@@ -1,23 +1,23 @@
-### FIDO U2F server sample in Node.js
+## FIDO U2F server sample in Node.js
 
 This server demonstrates **FIDO U2F** registration and authentication
 - **Register** your FIDO U2F key
 - **Authenticate** using your registerd FIDO U2F key
 
-### Prerequisites
+## Prerequisites
 
 - Node 12  
 - npm 6
 
-### Compilation
+## Compilation
 
 `$ npm install`
 
-### Execution
+## Execution
 
 `$ npm start`
 
-### Demonstration page
+## Demonstration page
 
 `https://localhost`
 
